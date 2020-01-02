@@ -1,8 +1,13 @@
 div {
- font-size: 72pt;
- font-size: 12vw;
- padding: 10px;
- font-family: Arial, Helvetica, sans-serif;
+    font-size: 72pt;
+    font-size: 10vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    white-space: nowrap;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .Low {
