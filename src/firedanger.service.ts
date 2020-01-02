@@ -8,7 +8,7 @@ export class FireDangerService {
         return this.httpService.get('http://weather.gfc.state.ga.us/Current2/GARAWS-OUT.aspx').toPromise().then(response => {
             const $ = cheerio.load(response.data);
             let rating = $('a[name="Camp Merrill"] > table > tbody > tr:nth-child(3) > td:nth-child(4) > font').text();
-            rating = rating.match(/[a-zA-Z]/gm).join('');
+            rating = rating.match(/[a-zA-Z]/gm).join('').replace('Upper', '').replace('Lower', '');
             return rating;
         });
     }
