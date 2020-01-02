@@ -1,12 +1,14 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Get, Render } from '@nestjs/common';
+import { FireDangerService } from './firedanger.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+    constructor(private readonly fireDangerService: FireDangerService) { }
 
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
-  }
+    @Get()
+    @Render('index')
+    async getCurrentFireDanger() {
+        const rating = await this.fireDangerService.getCurrentFireDanger();
+        return { rating };
+    }
 }
