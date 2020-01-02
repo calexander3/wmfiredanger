@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <title>Walnut Mountain Fire Danger Rating</title>
+    <link rel="stylesheet" type="text/css" href="site.css" />
 </head>
 
-<body>
-    Rating:
-    {{ rating }}
+<body class="{{ rating }}">
+    <div>
+        Fire Danger: {{ rating }}
+    </div>
 </body>
 
 </html>

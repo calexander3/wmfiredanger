@@ -1,0 +1,30 @@
+div {
+ font-size: 72pt;
+ padding: 10px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.Low {
+    color: white;
+    background-color: green;
+}
+
+.Moderate {
+    color: black;
+    background-color: yellow; 
+}
+
+.High {
+    color: black;
+    background-color: orange; 
+}
+
+.VeryHigh {
+    color: black;
+    background-color: red; 
+}
+
+.Extreme {
+    color: white;
+    background-color: darkred; 
+}
