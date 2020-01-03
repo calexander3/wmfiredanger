@@ -9,6 +9,7 @@ export class AppController {
     @Render('index')
     async getCurrentFireDanger() {
         const rating = await this.fireDangerService.getCurrentFireDanger();
-        return { rating };
+        const cssClass = rating.split(' ').join('').toLowerCase();
+        return { rating, cssClass };
     }
 }

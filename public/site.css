@@ -1,6 +1,9 @@
-div {
+body {
+    overflow: hidden;
     font-size: 72pt;
-    font-size: 10vw;
+}
+
+div {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -10,27 +13,38 @@ div {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.Low {
+.low {
+    font-size: 12vw;
     color: white;
     background-color: green;
 }
 
-.Moderate {
+.moderate {
     color: black;
     background-color: yellow; 
+    font-size: 9vw;
 }
 
-.High {
+.high {
     color: black;
     background-color: orange; 
+    font-size: 12vw;
 }
 
-.VeryHigh {
+.upperhigh, .lowerhigh {
+    color: black;
+    background-color: orange; 
+    font-size: 9vw;
+}
+
+.veryhigh {
     color: black;
     background-color: red; 
+    font-size: 9vw;
 }
 
-.Extreme {
+.extreme {
     color: white;
     background-color: darkred; 
+    font-size: 10vw;
 }
