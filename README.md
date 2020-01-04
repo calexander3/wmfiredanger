@@ -1,5 +1,5 @@
 ## Description
-
+A digital sign of the current fire danger rating in the community of Walnut Mountain, Elijay, GA.
 
 ## Installation
 
@@ -25,6 +25,9 @@ $ npm run start:prod
 ```bash
 # unit tests
 $ npm run test
+
+# end to end tests
+$ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
