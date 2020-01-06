@@ -21,7 +21,7 @@
     },
     "dependencies": {
         "@nestjs/common": "^6.10.14",
-        "@nestjs/core": "^6.10.13",
+        "@nestjs/core": "^6.10.14",
         "@nestjs/platform-express": "^6.10.13",
         "cheerio": "^1.0.0-rc.3",
         "hbs": "^4.0.6",
